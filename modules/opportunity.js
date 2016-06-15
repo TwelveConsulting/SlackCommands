@@ -44,13 +44,13 @@ function execute(req, res) {
 
     var fields = [];
     var attachments = [];
-    fields.push({title: "CP N", value: 10, short:true});
+    fields.push({title: "CP N", value: 9, short:true});
     fields.push({title: "RTT", value: 1, short:true});
     fields.push({title: "RTT E", value: 1, short:true});
     attachments.push({color: "#FCB95B", fields: fields});
     res.json({
         response_type: "in_channel",
-        text: "Solde : 12 jours",
+        text: "Solde : 11 jours",
         attachments: attachments
     });
 
