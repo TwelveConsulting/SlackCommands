@@ -4,11 +4,6 @@ var org = require('./auth').org,
 
 function execute(req, res) {
 
-    res.send(req.body.token + " " + OPPORTUNITY_TOKEN);
-    return;
-
-    
-
     if (req.body.token != OPPORTUNITY_TOKEN) {
          res.send("Invalid token");
          return;
